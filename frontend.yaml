@@ -15,7 +15,6 @@ spec:
       containers:
       - name: frontend
         image: thush1990/demo-ci:14
-        imagePullPolicy: Never
         ports:
         - containerPort: 5100    
 
