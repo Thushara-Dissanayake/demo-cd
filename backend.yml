@@ -1,37 +1,37 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: backend
 spec:
   selector:
     matchLabels:
-      app: frontend
+      app: backend
   replicas: 1
   template:
     metadata:
       labels:
-        app: frontend
+        app: backend
     spec:
       containers:
-      - name: frontend
-        image: thush1990/demo-ci:14
+      - name: backend
+        image: thush1990/demo-ci:backend
         imagePullPolicy: Never
         ports:
-        - containerPort: 5100    
+        - containerPort: 5200          
 
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend
+  name: backend
   labels:
-    service: frontend
+    service: backend
 spec:
   selector:
-    app: frontend
+    app: backend
   ports:
-  - name: "bind-frontend"
+  - name: "bind-backend"
     protocol: "TCP"
-    port: 5100
-    targetPort: 5100
+    port: 5200
+    targetPort: 5200    
