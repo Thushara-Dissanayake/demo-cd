@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-frontend
-        image: thush1990/demo-ci:latest
+        image: thush1990/demo-ci:14
         imagePullPolicy: Never
         ports:
         - containerPort: 5100
