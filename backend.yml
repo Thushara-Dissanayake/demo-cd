@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: thush1990/demo-ci:backend
+        image: thush1990/demo-ci:backend2
         ports:
         - containerPort: 5200          
 
