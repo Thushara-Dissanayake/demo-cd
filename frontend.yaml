@@ -29,7 +29,7 @@ spec:
       serviceAccountName: frontend
       containers:
       - name: frontend
-        image: thush1990/demo-ci:22
+        image: thush1990/demo-ci:23
         ports:
         - containerPort: 5100    
 
