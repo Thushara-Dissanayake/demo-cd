@@ -7,7 +7,7 @@ spec:
   sources:
     - name: frontend
       # namespace: default
-      action: deny
+      action: allow
   destination:
     name: backend
     # namespace: default
