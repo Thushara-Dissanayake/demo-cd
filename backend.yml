@@ -28,7 +28,7 @@ spec:
       serviceAccountName: backend
       containers:
       - name: backend
-        image: thush1990/demo-ci:backend2
+        image: thush1990/demo-ci:backend3
         ports:
         - containerPort: 5200          
 
